@@ -12,3 +12,5 @@ There are a few different ways you can use this script:
 * Output the top terms grouped by decade beginning with a specific year: `python <script name> -d 1900`
 
 Additionally, you can specify the number of terms to return, defaulting to 20: `python <script name> -d 1900 -t 5`
+
+An infographic charting the top 20 terms for decade from 1900 to present was created. It [visually](https://github.com/digitalhen/speechAnalysis/blob/master/state-of-the-union.png) demostrates the change of focus from decade to decade. Further, an article was [written](http://blog.henry.im/post/41423911843/state-of-the-union-speeches-delivered-in-the-early) about the findings.
