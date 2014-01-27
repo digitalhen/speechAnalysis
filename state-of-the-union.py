@@ -20,9 +20,19 @@ def calcTfIdf ( tfGroup, idfDict ):
 	for tfMember in tfGroup:
 		tfData = tfGroup[tfMember]
 		tfDict = tfData[2]
-		
+
+		print tfMember
+
+		# calculate the length and multiply tf by idf
+		length = 0
+
 		for key in tfDict:
 			tfDict[key] = tfDict[key] * idfDict[key]
+			length += tfDict[key]**2
+
+		# normalize the vector
+		for key in tfDict:
+			tfDict[key] = math.sqrt((tfDict[key]**2) / length)
 		
 	return
 
